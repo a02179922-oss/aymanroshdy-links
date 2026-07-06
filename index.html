@@ -38,12 +38,12 @@
         .link-button { background: var(--btn-bg); color: var(--text-color); padding: 16px; border-radius: 12px; text-align: center; text-decoration: none; display: flex; justify-content: center; align-items: center; gap: 10px; border: 1px solid var(--btn-border); font-weight: 500; }
         .link-button:hover { background: var(--text-color); color: var(--bg-phone); transform: scale(1.02); }
 
-        /* تلوين الأيقونات */
-        .fa-whatsapp { color: #25D366; }
-        .fa-threads { color: #000; } /* Threads شعارها أسود/أبيض */
-        .fa-instagram { color: #E1306C; }
-        .fa-x-twitter { color: var(--text-color); } /* X يبقى حسب لون الثيم */
-        .fa-tiktok { color: #000; } /* TikTok شعاره يظهر بشكل أفضل بالأسود أو الأبيض حسب الخلفية */
+        /* تلوين الأيقونات عند تفعيل الوضع الفاتح فقط */
+        body.light-mode .fa-whatsapp { color: #25D366; }
+        body.light-mode .fa-instagram { color: #E1306C; }
+        body.light-mode .fa-tiktok { color: #000; }
+        body.light-mode .fa-threads { color: #000; }
+        body.light-mode .fa-x-twitter { color: #000; }
     </style>
 </head>
 <body>
