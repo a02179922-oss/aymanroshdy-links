@@ -6,6 +6,7 @@
     <title>Ayman Roshdy | Links</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        /* تعريف الألوان الأساسية (الوضع المظلم) */
         :root {
             --bg-body: #e9e9e9;
             --bg-phone: #000;
@@ -13,15 +14,41 @@
             --btn-bg: #1c1c1c;
             --btn-border: #333;
         }
-        /* الوضع الفاتح */
-        body.light-mode { --bg-body: #f4f4f4; --bg-phone: #fff; --text-color: #000; --btn-bg: #eee; --btn-border: #ddd; }
+
+        /* تعريف ألوان الوضع الفاتح */
+        body.light-mode {
+            --bg-body: #d1d1d1;
+            --bg-phone: #f4f4f4;
+            --text-color: #000;
+            --btn-bg: #fff;
+            --btn-border: #ddd;
+        }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; transition: 0.3s; }
         body { height: 100vh; display: flex; justify-content: center; align-items: center; background: var(--bg-body); }
         
-        .phone { width: 100%; max-width: 350px; background: var(--bg-phone); border-radius: 40px; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative; }
+        .phone { 
+            width: 100%; 
+            max-width: 350px; 
+            background: var(--bg-phone); 
+            border-radius: 40px; 
+            padding: 40px 20px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            position: relative; 
+        }
         
-        #theme-toggle { position: absolute; top: 20px; right: 25px; cursor: pointer; color: var(--text-color); font-size: 20px; }
+        /* زر التبديل */
+        #theme-toggle { 
+            position: absolute; 
+            top: 25px; 
+            right: 30px; 
+            cursor: pointer; 
+            color: var(--text-color); 
+            font-size: 20px; 
+        }
         
         .profile { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid var(--text-color); margin-bottom: 20px; }
         .profile img { width: 100%; height: 100%; object-fit: cover; }
@@ -29,19 +56,37 @@
         h1 { color: var(--text-color); font-size: 24px; margin-bottom: 30px; }
         .links { width: 100%; display: flex; flex-direction: column; gap: 15px; }
         
-        .link-button { background: var(--btn-bg); color: var(--text-color); padding: 16px; border-radius: 12px; text-align: center; text-decoration: none; display: flex; justify-content: center; align-items: center; gap: 10px; border: 1px solid var(--btn-border); }
-        .link-button:hover { background: var(--text-color); color: var(--bg-phone); transform: scale(1.02); }
+        .link-button { 
+            background: var(--btn-bg); 
+            color: var(--text-color); 
+            padding: 16px; 
+            border-radius: 12px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 10px; 
+            border: 1px solid var(--btn-border); 
+        }
+        
+        .link-button:hover { 
+            background: var(--text-color); 
+            color: var(--bg-phone); 
+            transform: scale(1.02); 
+        }
     </style>
 </head>
 <body>
     <div class="phone">
-        <!-- زر التبديل -->
+        <!-- أيقونة التبديل -->
         <i id="theme-toggle" class="fas fa-adjust"></i>
         
         <div class="profile">
             <img src="https://i.ibb.co/Y7CXgSc4/478314431-514563738354105-4253529793725933323-n.jpg" alt="Ayman Roshdy">
         </div>
         <h1>Ayman Roshdy</h1>
+        
         <div class="links">
             <a class="link-button" href="https://wa.me/201553560401" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
             <a class="link-button" href="https://www.threads.net/@ayman__roshdy" target="_blank"><i class="fa-brands fa-threads"></i> Threads</a>
